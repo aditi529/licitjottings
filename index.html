@@ -1,120 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Licit Jottings</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+    body {
       font-family: 'Lato', sans-serif;
-      background-color: #fdfdfd;
-      color: #333;
+      background-color: #fdfcf9;
+      color: #1a1a1a;
+      line-height: 1.6;
     }
-
     header {
-      background-color: #1c2541;
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      background-color: #0a2740;
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
     }
-
     header h1 {
       font-family: 'Playfair Display', serif;
-      margin: 0;
-    }
-
-    nav a {
-      color: white;
-      margin-left: 1.5rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hero {
-      padding: 4rem 2rem;
-      background-color: #e3e3e3;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 1rem;
     }
-
-    .hero p {
+    header p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+    .btn {
+      background-color: #d39a2c;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background-color: #b98423;
+    }
+    .section {
+      padding: 4rem 2rem;
+      display: grid;
+      gap: 2rem;
+      text-align: center;
+    }
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+    }
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #eaeaea;
+      border-radius: 10px;
+      padding: 2rem;
+      width: 280px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
       font-size: 1.2rem;
     }
-
-    .section {
-      padding: 2rem;
-    }
-
-    .section h3 {
-      font-family: 'Playfair Display', serif;
-      color: #1c2541;
-    }
-
-    footer {
-      background-color: #1c2541;
-      color: white;
+    .footer {
+      background-color: #eaeaea;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      padding: 2rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
-
 <body>
   <header>
-    <h1>Licit Jottings</h1>
-    <nav>
-      <a href="#articles">Articles</a>
-      <a href="#courses">Courses</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Law Articles & Notes</h1>
+    <p>In-depth articles, study notes, and online courses on various legal topics.</p>
+    <a href="#articles" class="btn">Read Articles</a>
   </header>
 
-  <section class="hero">
-    <h2>Empowering Legal Minds</h2>
-    <p>Law articles, notes, and online courses for every aspiring legal scholar.</p>
+  <section class="section" id="services">
+    <div class="card-container">
+      <div class="card">
+        <h3>Articles & Notes</h3>
+        <p>Explore our collection of law articles and study notes.</p>
+        <a href="#articles" class="btn">View Articles</a>
+      </div>
+      <div class="card">
+        <h3>Courses</h3>
+        <p>Discover our online courses on legal subjects.</p>
+        <a href="#courses" class="btn">View Courses</a>
+      </div>
+      <div class="card">
+        <h3>About Us</h3>
+        <p>Learn more about Licit Jottings and our mission.</p>
+        <a href="#about" class="btn">Read More</a>
+      </div>
+    </div>
   </section>
 
-  <section id="articles" class="section">
-    <h3>Featured Articles & Notes</h3>
-    <ul>
-      <li><a href="https://drive.google.com">Understanding Indian Constitutional Law</a></li>
-      <li><a href="https://drive.google.com">Contract Law Basics: A Guide</a></li>
-      <li><a href="https://drive.google.com">Legal Research Techniques</a></li>
-    </ul>
+  <section class="section" id="contact">
+    <h2>Contact / Contribute</h2>
+    <p>Have questions or want to contribute? Get in touch with us.</p>
+    <a href="#contact-form" class="btn">Contact Us</a>
   </section>
 
-  <section id="courses" class="section">
-    <h3>Online Courses</h3>
-    <p>Enroll using the form below:</p>
-    <a href="https://forms.gle/your-course-form-link" target="_blank">Course Registration Form</a>
-  </section>
-
-  <section id="about" class="section">
-    <h3>About Licit Jottings</h3>
-    <p>Licit Jottings is a platform dedicated to sharing reliable legal content for students, law aspirants, and professionals.</p>
-  </section>
-
-  <section id="contact" class="section">
-    <h3>Contact / Contribute</h3>
-    <p>Have questions or want to contribute? Submit via the form:</p>
-    <a href="https://forms.gle/your-contact-form-link" target="_blank">Contact / Contribute Form</a>
-  </section>
-
-  <footer>
+  <footer class="footer">
     <p>&copy; 2025 Licit Jottings. All rights reserved.</p>
   </footer>
 </body>
-
 </html>
